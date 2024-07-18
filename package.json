@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "plato": "plato -d report -r routes",
     "build": "node esbuild.js",
+    "deploy": "gh-pages -d build",
     "start": "npm run build && node server.js"
   },
   "author": "hoang_marin",
