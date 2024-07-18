@@ -1,0 +1,70 @@
+{
+  "name": "wordle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --collect-coverage",
+    "lint": "eslint .",
+    "plato": "plato -d report -r routes",
+    "build": "node esbuild.js",
+    "start": "npm run build && node server.js"
+  },
+  "author": "hoang_marin",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node",
+    "injectGlobals": true,
+    "restoreMocks": true
+  },
+  "eslintConfig": {
+    "globals": {
+      "expect": true,
+      "Wordle": true,
+      "jest": true
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "mocha": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 9
+    },
+    "rules": {
+      "eqeqeq": "error",
+      "strict": "error",
+      "no-var": "error",
+      "no-unused-vars": [
+        "off"
+      ],
+      "prefer-const": "error",
+      "no-console": "off",
+      "indent": [
+        "error",
+        2
+      ],
+      "quotes": [
+        "error",
+        "single",
+        "avoid-escape"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    }
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.1",
+    "eslint": "^8.49.0",
+    "express": "^4.18.3",
+    "jest": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3",
+    "plato": "^1.7.0"
+  },
+  "dependencies": {
+  }
+}

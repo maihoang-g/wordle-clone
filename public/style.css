@@ -1,0 +1,88 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+            Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#game-message {
+  width: 18rem;
+  text-align: center;
+}
+
+.grid {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.letter-cell {
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.letter-row {
+  display: flex;
+}
+
+button:disabled {
+    font-size: 20px;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #bebebe;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+    margin-top: 20px;
+}
+
+button:enabled {
+    font-size: 20px;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.play-again-btn {
+  display: none;
+}
+
+.correct {
+  background-color: #70a35a;
+}
+
+.partial {
+  background-color: #d9d459;
+}
+
+.incorrect {
+  background-color: #6b6b64;
+}

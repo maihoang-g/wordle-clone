@@ -1,0 +1,65 @@
+x canary test
+
+x tally for target FAVOR guess FAVOR
+x tally for target FAVOR guess TESTS
+x tally for target FAVOR guess RAPID
+x tally for target FAVOR guess MAYOR
+x tally for target FAVOR guess FOR
+x tally for target FAVOR guess FERVER
+x tally for target FAVOR guess RIVER
+x tally for target FAVOR guess AMAST
+x tally for target SKILL guess SKILL
+x tally for target SKILL guess SWIRL
+x tally for target SKILL guess CIVIL
+x tally for target SKILL guess SHIMS
+x tally for target SKILL guess SILLY
+x tally for target SKILL guess SLICE
+
+x play with attempt 0 target FAVOR and guess FAVOR
+x play deal with invalid guess on first attempt
+x play first attempt with non-winning guess
+x play second attempt with winning guess
+x play second attempt with non-winning guess
+x play third attempt with winning guess
+x play third attempt with non-winning guess
+x play fourth attempt with winning guess
+x play fourth attempt with non-winning guess
+x play fifth attempt with winning guess
+x play fifth attempt with non-winning guess
+x play sixth attempt with winning guess
+x play sixth attempt with non-winning guess
+x play seventh attempt with winning guess
+x play eight attempt with non-winning guess
+
+npm test - will execute the test and coverage, etc. like it does now
+npm start - will execute the GUI
+
+x play throws an exception for attempt 1, target FAVOR and guess FEVER where FEVER is considered incorrect spelling
+x play returns proper response for attempt 1, target FAVOR and guess FEVER where FEVER is considered correct spelling
+x play throws an exception for attempt 1, target FAVOR and guess FEVER where checking for spelling results in an exception
+
+x getResponse returns 'true' for input FAVOR as respond from calling the webservice
+x getResponse returns 'false' for input FAVRO as respond from calling the webservice
+
+x parse returns true for argument 'true'
+x parse returns false for argument 'false'
+x parse raises ValueError when it does not receive a 'true' or 'false'
+
+x isSpellingCorrect takes 'FAVOR' calls getResponse and parse to return true
+x isSpellingCorrect takes 'FARRR' calls getResponse and parse to return false
+x isSpellingCorrect takes 'FAVOR' calls getResponse and fails with an exception from getResponse
+
+x write an express route to receive request from the frontend and make the call to the webservice
+and return the text from the webservice
+
+x integrate the GUI so it reports a wrong spelling when one is typed
+
+x after that, implement the code to fetch the words list and return the random word
+x randomWord successfully returns a word
+x randomWord fails and throws an exception
+x make sure randomWord returns 'unique' words (call 2-3 times and compare those words)
+
+x create express route that calls on randomWord when a get request comes to return the result from the webserviece
+
+x integrate GUI and get a randomWord at the start of a new game
+
